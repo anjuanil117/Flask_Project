@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+   
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPLOAD</title>
+</head>
+<body>
+<h1>Upload Your File!!</h1>
+<form id="upload" action="/upload" method="POST"  enctype="multipart/form-data">
+	<input type="file" name="photo" multiple>
+	<input type="submit">
+</form>
+</body>
+	
+</body>
+</html>
+
+{% endblock content %}

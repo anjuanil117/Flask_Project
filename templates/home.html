@@ -1,0 +1,254 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Autumatic Number Plate Recognition</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/bootstrap/css/bootstrap.min.css') }}">
+ 
+
+  <!-- Libraries CSS Files -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/font-awesome/css/font-awesome.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/animate/animate.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/ionicons/css/ionicons.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/ionicons/css/ionicons.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/owlcarousel/assets/owl.carousel.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lib/lightbox/css/lightbox.min.css.css') }}">
+ 
+
+  <!-- Main Stylesheet File -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.js') }}">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">ALPR</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+ 
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+      <!-- </li> -->
+      <!-- <li class="nav-item"> -->
+        <!-- <a class="nav-link" href="Register">Register</a> -->
+      <!-- </li> -->
+      <!-- <li class="nav-item"> -->
+        <!-- <a class="nav-link" href="Login">Login</a> -->
+      <!-- </li> -->
+       <!-- <li class="nav-item"> -->
+        <!-- <a class="nav-link" href="index">Upload</a> -->
+      <!-- </li> -->
+      
+    </ul>
+  </div>
+</nav>
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="{{url_for('static', filename='img/1.jpg',height=100,width=100)}}" /></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Automatic License Plate Recognition</h2>
+                <p>Hurt Your Helmet Not Your Head!!
+                Life will not be short,Ware a Helmet live longer.</p>
+                <a href="Login" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+        
+         
+
+         
+
+         
+
+        </div>
+
+       
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+   
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>The Objective of this Website is to develop an application for enforcing helmet wearing using CCTV cameras</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{url_for('static', filename='img/about-mission.jpg')}}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Our developing idea aims to help law enforcement by police, and eventually resulting in changing risk behaviours and consequently reducing accident impacts and its severity.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{url_for('static', filename='img/about-plan.jpg')}}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+               The scope of the project is to develop a system which captures all the riders who are not wearing a helmet so called a trafﬁc offender. From the CCTV footages, the riders are caught, their identity is taken from the license plates
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{url_for('static', filename='img/about-vision.jpg')}}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+               Reduce the Traffic Accidents due to without wearing Helmet. Provide the awareness about the importance of traffic rules in Real life
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    
+  
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team</h3>
+          <p>Alone we can do so little, together we can do so much.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{url_for('static', filename='img/team-4.jpg')}}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shamla M</h4>
+                  <span>Front-end Developer</span>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{url_for('static', filename='img/team-2.jpg')}}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Anju Anil</h4>
+                  <span>Backend Developer</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{{url_for('static', filename='img/team-3.jpg')}}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Ayisha Safwana</h4>
+                  <span>Backend Developer</span>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{{url_for('static', filename='img/team-1.jpg')}}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Anjaly C</h4>
+                  <span>Front end Developer</span>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    
+  </main>
+
+ 
+</body>
+</html>
